@@ -1,6 +1,12 @@
 language: java
-
 notifications:
   email:
-    on_success: always # default: change
-    on_failure: always # default: always
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: OlpnJBHT70lvLLt+cJO0Ek/P2e60RZ7LPC4vIOy5iTI/szOYGFFMSpXxZ+DizeGsN1sMKkem5niJqbL70ZesQVWCAJnTwSQkTdNxdt6WL3LEXrgTMiNDGxOaXLJDEBphIM0ZCkDK96ATvi5usvynZhkauaojdsahMqBbicutS4t0tJkCs746UQjpARD2ss2PN637GA0qC3dvlEbfaMDjzM5fhzYmcfqXUR5EeYnQJK9oO+H/7ejpOnYo61NRXDqe3+q6/EtSlQl0mUZmW38ppie1NW74aXROtFmEI/6NTZhSQ+jKc4UlILPtEpmshtswquPieRUFyLFkEixEk8dqYLUrmA+IRjro6lU8N3bt7yvkfs/7RvU8uLArvMpm8j3HFuyZu+4zZ+QATe4yDk6pZ0qyAvQIEX926qmb2Cer4fHbFFm8pT07i2iNRMs39cRd0HGu/UbjrJ/BwXE4OMvpAwx3+dyMIxhzk+0F43iekzfiJduBwqO5l1J9T2w6qO+pSZjYMQgLgIXE/MebWaleB+1JsThji6mZrVxlshetttaE1LumEiDMgR3pYdTVYNz7Vr/rwCpp31CJhsrmvZtXlJcaQfsK79tT2Ncx6sbufJWOXwcb1AclCQ30XXHCIpJyWAQ2p3s2VHAziDgIZ9Nh5m8QKbQmggDuVYgjI3vtYkc=
+  app: frozen-ravine-27172
+  on:
+    repo: samusfc/hello-java
